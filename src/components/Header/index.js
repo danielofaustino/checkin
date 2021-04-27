@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -29,10 +30,14 @@ const Header = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/">Bater Ponto</NavLink>
+              <Link to="/">
+                <NavLink>Bater Ponto</NavLink>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="/atestado">Atestado</NavLink>
+              <Link to="/atestado">
+                <NavLink>Atestado</NavLink>
+              </Link>
             </NavItem>
           </Nav>
           <NavbarText>Comunicar Falta</NavbarText>

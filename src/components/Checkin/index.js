@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Form, FormGroup, Label, Input, Alert } from 'reactstrap';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
 import format from 'date-fns/format';
 
 import ptBR from 'date-fns/locale/pt-BR';
@@ -57,7 +57,7 @@ const Checkin = (props) => {
         <Input className="btn btn-dark" type="submit" value="Bater o ponto" />
       </Form>
 
-      <Alert color="success">Ponto Registrado com Sucesso</Alert>
+     
     </div>
   );
 };
